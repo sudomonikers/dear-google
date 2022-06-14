@@ -1,0 +1,25 @@
+<div class="navbar" [ngClass]="{ grayback: navOpen}" (click)="toggleNav()">
+  <div class="hamburger-icon" id="icon">
+    <div class="icon-1" id="a" [ngClass]="{ a: navOpen }"></div>
+    <div class="icon-2" id="b" [ngClass]="{ b: navOpen }"></div>
+    <div class="icon-3" id="c" [ngClass]="{ c: navOpen }"></div>
+    <div class="clear"></div>
+  </div>
+</div>
+<div class="centered" *ngIf="navOpen" [@navOpen]="navOpen ? 'open' : 'closed'">
+  <div class="nav-link">
+    <button class="google-button blue" routerLink="" (click)="navOpen = false">Home</button>
+  </div>
+  <div class="nav-link">
+    <button class="google-button red" routerLink="my-story" (click)="navOpen = false">My Story</button>
+  </div>
+  <div class="nav-link">
+    <button class="google-button yellow" routerLink="my-career" (click)="navOpen = false">My Career</button>
+  </div>
+  <div class="nav-link">
+    <button class="google-button green" routerLink="my-aspirations" (click)="navOpen = false">My Aspirations</button>
+  </div>
+  <div class="nav-link">
+    <button class="google-button blue" routerLink="how-this-site-was-built" (click)="navOpen = false">How I Built This</button>
+  </div>
+</div>

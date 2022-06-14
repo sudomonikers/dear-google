@@ -1,1 +1,237 @@
 /* You can add global styles to this file, and also import other style files */
+@font-face {
+  font-family: "roboto-bold";
+  src: url("./assets/Roboto-Bold.ttf") format("opentype");
+}
+.roboto-bold {
+  font-family: "roboto-bold";
+}
+@font-face {
+  font-family: "roboto-light";
+  src: url("./assets/Roboto-Light.ttf");
+}
+.roboto-light {
+  font-family: "roboto-light";
+}
+@font-face {
+  font-family: "roboto-regular";
+  src: url("./assets/Roboto-Regular.ttf") format("opentype");
+}
+.roboto-regular {
+  font-family: "roboto-regular";
+}
+@font-face {
+  font-family: "roboto-thin";
+  src: url("./assets/Roboto-ThinItalic.ttf") format("opentype");
+}
+.roboto-thin {
+  font-family: "roboto-thin";
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-family: 'roboto-regular';
+}
+
+:root {
+  --blue: #4285f4;
+  --red: #ea4335;
+  --green: #34a853;
+  --yellow: #f9ab00;
+  --black: #202124;
+  --white: #fff;
+  --gray: #5f6368;
+}
+
+.blue {
+  color: var(--blue);
+}
+
+.red {
+  color: var(--red);
+}
+
+.green {
+  color: var(--green);
+}
+
+.yellow {
+  color: var(--yellow);
+}
+
+
+
+
+
+//global classes
+.container {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  background-color: var(--white);
+}
+
+.centered {
+  text-align: center;
+}
+
+.padding {
+  padding: 15px;
+}
+
+.link {
+  cursor: pointer;
+  transition: all .3s;
+}
+.link:hover {
+  letter-spacing: 2px;
+}
+
+
+
+//main button
+.google-button {
+  height: 50px;
+  line-height: 50px;
+  width: 180px;
+  font-size: 18px;
+  background: rgba(0, 0, 0, 0);
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.google-button:after,
+.google-button:before {
+  backface-visibility: hidden;
+  border: 1px solid rgba(#fff, 0);
+  border-radius: 10px;
+  bottom: 0px;
+  content: "";
+  display: block;
+  position: absolute;
+  transition: all .3s;
+  width: 0;
+}
+
+.google-button:hover:after,
+.google-button:hover:before {
+  backface-visibility: hidden;
+  border-color: var(--blue);
+  transition: all .3s;
+  width: 100%;
+}
+
+.google-button:hover,
+.google-button:active {
+  letter-spacing: 2px;
+}
+
+.google-button:hover:before {
+  bottom: auto;
+  top: 0;
+  width: 100%;
+}
+
+.blue.google-button:hover:before,
+.blue.google-button:hover:after {
+  border-color: var(--blue) !important;
+}
+
+.red.google-button:hover:before,
+.red.google-button:hover:after {
+  border-color: var(--red) !important;
+}
+
+.green.google-button:hover:before,
+.green.google-button:hover:after {
+  border-color: var(--green) !important;
+}
+
+.yellow.google-button:hover:before,
+.yellow.google-button:hover:after {
+  border-color: var(--yellow) !important;
+}
+
+
+//bootstrap grid
+.row {
+  width: 100%;
+}
+.row:before,
+.row:after {
+  display: table;
+  content: "";
+}
+.row:after {
+  clear: both;
+}
+.col-1, 
+.col-2, 
+.col-3, 
+.col-4, 
+.col-5, 
+.col-6, 
+.col-7, 
+.col-8, 
+.col-9, 
+.col-10, 
+.col-11, 
+.col-12 {
+  float: left;
+}
+.col-1 {
+  width: 8.33333333%;
+}
+.col-2 {
+  width: 16.66666667%;
+}
+.col-3 {
+  width: 25%;
+}
+.col-4 {
+  width: 33.33333333%;
+}
+.col-5 {
+  width: 41.66666667%;
+}
+.col-6 {
+  width: 50%;
+}
+.col-7 {
+  width: 58.33333333%;
+}
+.col-8 {
+  width: 66.66666667%;
+}
+.col-9 {
+  width: 75%;
+}
+.col-10 {
+  width: 83.33333333%;
+}
+.col-11 {
+  width: 91.66666667%;
+}
+.col-12 {
+  width: 100%;
+}
+@media (max-width: 768px) {
+  .col-1,
+  .col-2,
+  .col-3,
+  .col-4,
+  .col-5,
+  .col-6,
+  .col-7,
+  .col-8,
+  .col-9,
+  .col-10,
+  .col-11,
+  .col-12 {
+    width: 100%;
+  }
+}
