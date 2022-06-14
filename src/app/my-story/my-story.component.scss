@@ -1,0 +1,32 @@
+.storybook {
+  background-color: #fdf5e8;
+  color: var(--black);
+  height: 100%;
+  padding: 25px;
+}
+.text {
+  width: 70%;
+  font-size: 18px;
+  max-width: 600px;
+  margin-top: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  position: relative;
+}
+
+.big-o {
+  float: left;
+  line-height: 100%;
+  width: 0.7em;
+  margin-right: 10px;
+  font-size: 700%;
+}
+
+.big-o-continued {
+    font-size: 200%;
+}
+
+.end-of-chapter {
+    text-align: center;
+    font-size: 24px;
+}

@@ -1,7 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 @font-face {
   font-family: "roboto-bold";
-  src: url("./assets/Roboto-Bold.ttf") format("opentype");
+  src: url("./assets/Roboto-Bold.ttf");
 }
 .roboto-bold {
   font-family: "roboto-bold";
@@ -15,17 +15,24 @@
 }
 @font-face {
   font-family: "roboto-regular";
-  src: url("./assets/Roboto-Regular.ttf") format("opentype");
+  src: url("./assets/Roboto-Regular.ttf");
 }
 .roboto-regular {
   font-family: "roboto-regular";
 }
 @font-face {
   font-family: "roboto-thin";
-  src: url("./assets/Roboto-ThinItalic.ttf") format("opentype");
+  src: url("./assets/Roboto-ThinItalic.ttf");
 }
 .roboto-thin {
   font-family: "roboto-thin";
+}
+@font-face {
+  font-family: "berkshire-swash";
+  src: url("./assets/BerkshireSwash-Regular.ttf");
+}
+.berkshire-swash {
+  font-family: "berkshire-swash";
 }
 
 * {

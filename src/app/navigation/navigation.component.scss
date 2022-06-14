@@ -24,7 +24,7 @@
   height: 50px;
   position: relative;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translateX(-120px);
   margin: 15px 30px;
 }
 
@@ -62,12 +62,13 @@
   width: 60px;
   top: 10px;
   left: 50%;
+  transform: translateX(-50%);
   z-index: 1000;
   cursor: pointer;
   border-radius: 50%;
   transition: all 0.2s ease-in-out;
   &:hover {
-    transform: scale(1.2);
+    transform: translateX(-50%) scale(1.2);
   }
 }
 
