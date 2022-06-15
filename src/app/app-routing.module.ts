@@ -2,9 +2,8 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { MyStoryComponent } from './my-story/my-story.component';
 import { HiMelissaComponent } from './hi-melissa/hi-melissa.component';
-import { MyCareerComponent } from './my-career/my-career.component';
-import { MyAspirationsComponent } from './my-aspirations/my-aspirations.component';
 import { MyToolsComponent } from './my-tools/my-tools.component';
+import { AboutMeComponent } from './about-me/about-me.component';
 
 const routes: Routes = [
   {
@@ -21,16 +20,12 @@ const routes: Routes = [
     component: MyStoryComponent,
   },
   {
-    path: 'my-career',
-    component: MyCareerComponent,
-  },
-  {
     path: 'my-tools',
     component: MyToolsComponent
   },
   {
-    path: 'my-aspirations',
-    component: MyAspirationsComponent,
+    path: 'about-me',
+    component: AboutMeComponent,
   },
   {
     path: '**',

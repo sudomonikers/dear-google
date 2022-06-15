@@ -18,6 +18,11 @@
   z-index: 999;
 }
 
+.links {
+  top: 50%;
+  transform: translateY(50%);
+}
+
 .nav-link {
   display: block;
   width: 180px;

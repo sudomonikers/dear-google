@@ -6,20 +6,19 @@
     <div class="clear"></div>
   </div>
 </div>
-<div class="centered" *ngIf="navOpen" [@navOpen]="navOpen ? 'open' : 'closed'">
-  <div class="nav-link">
-    <button class="google-button blue" routerLink="" (click)="navOpen = false">Home</button>
-  </div>
-  <div class="nav-link">
-    <button class="google-button red" routerLink="my-story" (click)="navOpen = false">My Story</button>
-  </div>
-  <div class="nav-link">
-    <button class="google-button yellow" routerLink="my-career" (click)="navOpen = false">My Career</button>
-  </div>
-  <div class="nav-link">
-    <button class="google-button green" routerLink="my-aspirations" (click)="navOpen = false">My Aspirations</button>
-  </div>
-  <div class="nav-link">
-    <button class="google-button blue" routerLink="my-tools" (click)="navOpen = false">My Tools</button>
+<div class="centered" *ngIf="navOpen" [@navOpen]="navOpen">
+  <div class="links">
+    <div class="nav-link">
+      <button class="google-button blue" routerLink="" (click)="navOpen = false">Home</button>
+    </div>
+    <div class="nav-link">
+      <button class="google-button red" routerLink="my-story" (click)="navOpen = false">My Story</button>
+    </div>
+    <div class="nav-link">
+      <button class="google-button yellow" routerLink="my-tools" (click)="navOpen = false">My Tools</button>
+    </div>
+    <div class="nav-link">
+      <button class="google-button green" routerLink="about-me" (click)="navOpen = false">About Me</button>
+    </div>
   </div>
 </div>

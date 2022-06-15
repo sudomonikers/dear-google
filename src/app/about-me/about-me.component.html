@@ -1,0 +1,50 @@
+<div class="newspaper">
+    <p id="typewriter" [innerHTML]="typeWriter" class="bohemian-typewriter type-text"></p>
+</div>
+<div class="contact" *ngIf="typeFinished" [@flyIn]="typeFinished">
+    <a href="mailto:andrewlink1999@gmail.com" class="roboto-bold">andrewlink1999@gmail.com</a>
+    <a href="tel:4403849525" class="roboto-bold">440-384-9525</a>
+    <div class="box box-1 roboto-normal" [@flyIn]="typeFinished">
+        <h3 class="roboto-bold">Book Recommendations</h3>
+        <h5 class="roboto-thin">Sci-Fi / Fantasy</h5>
+        <ul>
+            <li>Stories of Your Life - Ted Chiang</li>
+            <li>Foundation Series - Isaac Asimov</li>
+            <li>Mistborn Series - Brandon Sanderson</li>
+            <li>Kingkiller Chronicles - Patrick Rothfuss</li>
+            <li>Hitchhiker's Guide to the Galaxy - Douglas Adams</li>
+            <li>The Lies of Locke Lamora - Scott Finch</li>
+            <li>A Memory Called Empire - Arkady Martine</li>
+        </ul>
+        <h5 class="roboto-thin margin-top">Improvement</h5>
+        <ul>
+            <li>Extreme Ownership - Jocko Willink</li>
+            <li>Meditations - Marcus Aurelius</li>
+            <li>Never Split the Difference - Chris Voss</li>
+            <li>The Prince - Niccolò Machiavelli</li>
+            <li>The Art of War - Sun Tzu</li>
+        </ul>
+    </div> 
+    <div class="box box-2 roboto-normal">
+        <h3 class="roboto-bold">Photos!!</h3>
+        <div class="row">
+            <div class="col-6">
+                <img src="../../assets/abbyKneelingHairMedia.jpg" alt="Abby Link wearing face paint">
+                <img src="../../assets/8688876C-57C1-4961-8F26-2A7E0384FAB1.jpg" alt="Lulu Li being a model">
+            </div>
+            <div class="col-6">
+                <img src="../../assets/momandmikecropped.jpg" alt="Happy couple in winter">
+                <img src="../../assets/IMG_2467.jpeg" id="needs-explanation" alt="Andrew Link being ridiculous"><span class="imgheading roboto-thin">This one is purely for your amusement.</span>
+                <img src="../../assets/mehandflowpreedit.jpg" alt="Artful rendition of Andrew Link">
+            </div>
+        </div>
+        <div class="row"><p>In general I like bright, colorful styles of happy people.</p></div>
+        <div class="row margin-top"><a href="https://www.instagram.com/pseudomoniker/">Check me on Insta!</a></div>
+    </div>
+    <div class="box box-3 roboto-normal">
+        <h3 class="roboto-bold">Challenge Me at Chess!</h3>
+        <p>I've been playing chess since the pandemic started, and I've peaked around 1700 Rapid, which I'm pretty proud of! Feel free to shoot me a challenge if you're up for it.</p>
+        <a href="https://www.chess.com/member/sudomoniker" target="_blank">My Profile</a>
+    </div> 
+</div>
+   

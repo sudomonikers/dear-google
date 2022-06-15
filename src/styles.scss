@@ -34,6 +34,13 @@
 .berkshire-swash {
   font-family: "berkshire-swash";
 }
+@font-face {
+  font-family: "bohemian-typewriter";
+  src: url("./assets/Bohemian\ Typewriter.ttf");
+}
+.bohemian-typewriter {
+  font-family: "bohemian-typewriter";
+}
 
 * {
   margin: 0;
@@ -69,7 +76,15 @@
   color: var(--yellow);
 }
 
-
+a {
+  text-decoration: none;
+  color: var(--blue);
+  transition: all .3s
+}
+a:hover {
+  color: var(--yellow);
+  letter-spacing: 2px;
+}
 
 
 
@@ -79,6 +94,11 @@
   width: 100%;
   position: relative;
   background-color: var(--white);
+  padding: 0 6%;
+}
+
+.margin-top {
+  margin-top: 20px;
 }
 
 .centered {
@@ -188,6 +208,7 @@
 .col-10, 
 .col-11, 
 .col-12 {
+  min-height: 1px;
   float: left;
 }
 .col-1 {

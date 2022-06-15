@@ -1,0 +1,20 @@
+.list-item {
+  display: block;
+  padding: 10px 0;
+}
+
+.lfloat {
+  transform: translateX(-10vw);
+  display: block;
+  font-size: 10vw;
+}
+.rfloat {
+  transform: translateX(10vw);
+  display: block;
+  font-size: 10vw;
+}
+
+.para {
+  text-align: left;
+  line-height: 30px;
+}
